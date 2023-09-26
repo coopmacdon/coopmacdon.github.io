@@ -1,0 +1,31 @@
+/*
+Author: Cooper MacDonald 
+File: stylesheetLab1.html
+Date: 19 September 2023
+This is the Lab 1 css style sheet for Web Development - Fundamentals (INFT1206)
+*/
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .sender-column {
+    text-align: right;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  p,ul,ol,dl,address {
+    font-size: 1.1em;
+  }
+
+  p, li, dd, dt, address {
+    line-height: 1.5;
+  }

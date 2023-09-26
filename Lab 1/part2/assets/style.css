@@ -1,0 +1,129 @@
+/* 
+Author: Cooper MacDonald 
+File: style.css
+Date: 22 September 2023
+Description: This is the css for Lab 1 part 2 page for Web Development - Fundamentals (INFT1206)
+*/
+
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: rgb(30, 30, 30);
+}
+
+/* || typography */
+
+h1, h2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(1, 70, 1);
+  text-align:center;
+}
+
+p, li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(30, 30, 30);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+  flex: 5;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+/* || header layout */
+
+header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+main, header, nav, article, aside, footer, section {
+  background-color:rgba(175, 250, 175, 0.5);
+  padding: 1%;
+}
+
+header img {
+  display: block;
+  height: 60px;
+  padding-top: 20.15px;
+}
+
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a, nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article, section {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  padding: 1%;
+}
+
+aside a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 10px;
+}
