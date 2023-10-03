@@ -126,26 +126,33 @@ Created a formatted Mozilla splash page using resized pictures.
                  sizes="(max-width: 500px) 120px,
                         400px"
                  src="firefox_logo400.png" alt="Click to download Firefox">
-        </a>
-        <a href="https://www.mozilla.org/">
+          </a>
+          <a href="https://www.mozilla.org/">
             <img srcset="mozilla-dinosaur120.png 120w,
                          mozilla-dinosaur400.png 400w"
                  sizes="(max-width: 500px) 120px,
                         400px"
                  src="mozilla-dinosaur400.png" alt="Learn more about Mozilla here">
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img>
-        </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img>
-        </a>
-        <div class="clearfix"></div>
-      </div>
-
-      <div class="red-panda">
-        <!-- insert picture element -->
-      </div>
+          </a>
+          <a href="https://addons.mozilla.org/">
+            <img srcset="firefox-addons120.png 120w,
+                         firefox-addons400.png 400w"
+                 sizes="(max-width: 500px) 120px,
+                        400px"
+                 src="firefox-addons400.png" alt="Customize Firefox with add-ons">
+          </a>
+          <a href="https://developer.mozilla.org/en-US/">
+            <img  src="mdn.svg" role="img" alt="Learn web development with Mozilla Developer Network">
+          </a>
+          <div class="clearfix"></div>
+        </div>
+  
+        <div class="red-panda">
+          <picture>
+            <source media="(max-width: 1200px)" srcset="red-panda600.jpg">
+            <img src="red-panda1200.jpg" alt="a red panda">
+          </picture>
+        </div>
 
     </main>
   </body>
