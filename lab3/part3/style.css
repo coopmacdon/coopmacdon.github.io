@@ -44,8 +44,8 @@ Typesetting a community school homepage enhancing the layout with css.
   /* header and footer */
   
   header, footer {
-    border-top: 5px solid #a66;
-    border-bottom: 5px solid #a66;
+    border-top: 5px solid purple;
+    border-bottom: 5px solid purple;
   }
 
 /* font imports */
@@ -77,15 +77,15 @@ See https://fonts.google.com/specimen/Raleway
 }
 
 /* Applying fonts to the page */
-
 html {
   font-family: 'Crimson Text';
   font-size: 10px;
+  color: black;
 }
 
 h1, h2 {
-    
   font-family: 'Raleway';
+  color: darkgreen;
 }
 
 h1 {
@@ -106,4 +106,77 @@ p, li {
   line-height: 1.5;
   letter-spacing: 0.5px;
   word-spacing: 3px;
+  color: black;
+}
+
+/* Link styling */
+a {
+  outline: none;
+}
+
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
+}
+
+a:link, a:visited {
+  color: darkgreen;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+a:active {
+  color: transparent;
+  text-shadow: 0px 0px 1px purple,
+               0px 0px 2px purple,
+               0px 0px 3px darkslategray,
+               0px 0px 4px darkslategray;
+}
+
+ul, ol {
+  margin: 1.5rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-greek;
+}
+
+/* nav menu */
+nav ul {
+  padding-left: 0;
+  margin-top: 0.75rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid greenyellow;
+  color: darkgreen;
+}
+
+nav li a:focus, nav li a:hover {
+  color: plum;
+  background: darkgreen;
+}
+
+nav li a:active {
+  color: white;
+  background: green;
 }
