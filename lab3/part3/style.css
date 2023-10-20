@@ -2,7 +2,8 @@
 Author: Cooper MacDonald 
 File: style.css
 Date: October 20, 2023
-Description: This is the Lab 3 part 3 css page for Web Development - Fundamentals (INFT1206)  
+Description: This is the Lab 3 part 3 css page for Web Development - Fundamentals (INFT1206)
+Typesetting a community school homepage enhancing the layout with css.  
 */
 
 * {
@@ -77,11 +78,32 @@ See https://fonts.google.com/specimen/Raleway
 
 /* Applying fonts to the page */
 
-body {
-    font-family: 'Crimson Text';
+html {
+  font-family: 'Crimson Text';
+  font-size: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     
-    font-family: 'Raleway';
+  font-family: 'Raleway';
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+p, li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
 }
