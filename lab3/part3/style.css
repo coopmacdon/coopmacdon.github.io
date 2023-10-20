@@ -46,3 +46,42 @@ Description: This is the Lab 3 part 3 css page for Web Development - Fundamental
     border-top: 5px solid #a66;
     border-bottom: 5px solid #a66;
   }
+
+/* font imports */
+
+/*
+
+Crimson Text font obtained from fonts.google.com,
+originally created by Sebastian Kosch
+See https://fonts.google.com/specimen/Crimson+Text
+
+Raleway font obtained from fonts.google.com,
+originally created by Matt McInterney
+See https://fonts.google.com/specimen/Raleway
+
+*/
+
+@font-face {
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/CrimsonText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+/* Applying fonts to the page */
+
+body {
+    font-family: 'Crimson Text';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+    font-family: 'Raleway';
+}
