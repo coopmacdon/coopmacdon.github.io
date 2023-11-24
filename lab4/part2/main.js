@@ -2,7 +2,7 @@
 Author: Cooper MacDonald 
 File: main.js
 Date: November 24, 2023
-Description: 
+Description: Image gallery where you can select any of the five images and have implemented a button to darken them.
 */
 
 const displayedImage = document.querySelector('.displayed-img');
