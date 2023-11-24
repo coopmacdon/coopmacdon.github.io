@@ -29,14 +29,22 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-class Ball {
-    constructor(x, y, velX, velY, color, size) {
+class Shape {
+    constructor(x, y, velX, velY) {
         this.x = x;
         this.y = y;
         this.velX = velX;
         this.velY = velY;
+    }
+}
+
+class Ball extends Shape{
+    
+    constructor(x, y, velX, velY, color, size) {
+        super(x, y, velX, velY);
         this.color =color;
         this.size = size;
+        this.exists = true;
     }
 
 
@@ -70,12 +78,13 @@ class Ball {
 
     collisionDetect() {
         for (const ball of balls) {
-            if (!(this === ball)) {
+          if (!(this === ball) && ball.exists) {
                 const dx = this.x - ball.x;
                 const dy = this.y - ball.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
-                if (distance < this.size + ball.size){
-                    ball.color = this.color = randomRGB();
+        
+                if (distance < this.size + ball.size) {
+                ball.color = this.color = randomRGB();
                 }
             }
         }
