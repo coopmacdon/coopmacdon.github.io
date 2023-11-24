@@ -2,7 +2,7 @@
 Author: Cooper MacDonald 
 File: main.js
 Date: November 24, 2023
-Description: ...
+Description: Logic implementation to creating a random story that generates by randomly selecting one of the three options for each insertion.
 */
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
@@ -13,7 +13,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storytext = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+const storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
 
 const insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
 const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
@@ -23,17 +23,28 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+  let newStory = storyText;
+
+  const xItem = randomValueFromArray(insertX)
+  const yItem = randomValueFromArray(insertY)
+  const zItem = randomValueFromArray(insertZ)
+
+  newStory = newStory.replaceAll(':insertx:',xItem);
+  newStory = newStory.replaceAll(':inserty:',yItem);
+  newStory = newStory.replaceAll(':insertz:',zItem);
+
   if(customName.value !== '') {
     const name = customName.value;
-
+    newStory = newStory.replaceAll('Bob', name)
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
-
+    const weight = `${Math.round(300 * 0.07142857)} stone`;
+    const temperature = `${Math.round((94 - 32) * 5 / 9)} centigrade`;
+    newStory = newStory.replaceAll('94 fahrenheit', temperature);
+    newStory = newStory.replaceAll('300 pounds', weight);
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
