@@ -2,7 +2,7 @@
 Author: Cooper MacDonald 
 File: main.js
 Date: December 12, 2023
-Description: 
+Description: Java script for the fictional nature website detailing facts about wild and urban bears.
 */
 
 // functionality for showing/hiding the comments section
