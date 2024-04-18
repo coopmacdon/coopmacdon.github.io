@@ -1,0 +1,35 @@
+{
+  "users" :
+  [
+    {
+      "FullName" : "Bilbo Baggins",
+      "EmailAddress" : "bilbobaggin@example.com",
+      "ContactNumber" : "123-336-7890"
+
+    },
+    {
+      "FullName" : "Samwise Gamgee",
+      "ContactNumber" : "123-446-7890",
+      "EmailAddress" : "sgamgee@example.com"
+
+
+    },
+    {
+      "FullName" : "Admin",
+      "ContactNumber" : "123-666-7890",
+      "EmailAddress" : "admin@example.com"
+
+
+    }
+
+
+
+
+  ]
+
+
+
+
+
+
+}
