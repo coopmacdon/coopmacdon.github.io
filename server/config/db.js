@@ -8,8 +8,7 @@ if (LOCAL) {
     exports.HostName = HostName = "localhost";
 }
 else {
-    exports.URI = URI = "mongodb+srv://AjaySinghAhir:Ajay@2003@cluster0.mbalzwc.mongodb.net/contacts?" +
-        "retryWrites=true&w=majority&appName=Cluster0";
+    exports.URI = URI = "mongodb+srv://coopermacdonald:JbNrjFkBi4tfaxFZ@harmonyhub.a5qk01z.mongodb.net/?retryWrites=true&w=majority&appName=HarmonyHub";
     exports.HostName = HostName = "MongoDB Atlas";
 }
 exports.SessionSecret = "INFT2202SessionSecret";

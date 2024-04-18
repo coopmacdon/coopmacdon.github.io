@@ -6,8 +6,7 @@ if (LOCAL){
     URI = "mongodb://localhost/contacts";
     HostName = "localhost";
 }else{
-    URI= "mongodb+srv://AjaySinghAhir:Ajay@2003@cluster0.mbalzwc.mongodb.net/contacts?" +
-        "retryWrites=true&w=majority&appName=Cluster0"
+    URI= "mongodb+srv://coopermacdonald:JbNrjFkBi4tfaxFZ@harmonyhub.a5qk01z.mongodb.net/?retryWrites=true&w=majority&appName=HarmonyHub";
     HostName = "MongoDB Atlas";
 }
 
